@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+In software development, A framework serves as a tool equipped with
+predefined rules and conventions that offer a structured approach
+to constructing an application.
 
-## Getting Started
+A framework allows developer to focus on implementing specific application
+logic rather than with low-level design.
 
-First, run the development server:
+Simply put, A framework provides pre-built solutions for common
+functionalities
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Adding Eslint standard code styles
+
+(https://standardjs.com/rules)
+
+```js
+npm install eslint-config-standard
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Adding Eslint configuration fro Tailwindss
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```js
+npm install eslint-plugin-tailwindcss
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Prettier vs Eslint potential conflicts
 
-## Learn More
+To avoid conflicts, you should run:
 
-To learn more about Next.js, take a look at the following resources:
+```js
+npm install eslint-config-prettier
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Server-Side Rendering Benefits:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1- Smaller Javascript Bundle Size
+2- Enhanced SEO
+3- Faster initial page load for better accessibility and user experience
+4- Efficient utilization of Server Resources
