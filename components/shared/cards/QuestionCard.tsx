@@ -60,6 +60,7 @@ export const QuestionCard = ({
           title={` - asked ${getTimestamp(createdAt)}`}
           href={`/profile/${author._id}`}
           textStyles="body-medium text-dark400_light800"
+          isAuthor
         />
         <Metric
           imgUrl="/assets/icons/like.svg"
