@@ -9,6 +9,7 @@ import { revalidatePath } from 'next/cache';
 
 export async function getQuestions(params: GetQuestionsParams) {
   try {
+    await connectToDatabase();
     const questions = await Question.find()
       .populate({
         path: 'tags',
